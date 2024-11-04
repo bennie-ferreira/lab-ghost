@@ -6,7 +6,7 @@ Lembre-se para chegar a perfeição exige pratica, então faça de conta que é 
 
 ### 🎲 banco de dados 
 - SQL SERVER
-- MYSQL
+- MYSQL | phpmyadmin
 - PostgreSQL
 - MongoDB
 - Redis

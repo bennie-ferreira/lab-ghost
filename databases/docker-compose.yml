@@ -1,0 +1,52 @@
+services:
+
+  mssql:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    container_name: mssql
+    restart: always
+    ports:
+      - "1433:1433"
+    environment:
+      SA_PASSWORD: "Admin123@a#!"
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: "Developer"
+    volumes:
+      - "data-mssql:/var/opt/mssql/"
+    networks:
+      - database-network
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    environment:
+      MYSQL_DATABASE: test_db
+      MYSQL_ROOT_PASSWORD: 12345678
+    ports:
+      - "3306:3306"
+    volumes:
+      - data-mysql:/var/lib/mysql
+    networks:
+      - database-network
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    container_name: phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - "8090:80"
+    restart: always
+    networks:
+      - database-network
+
+volumes:
+  data-mssql:
+    driver: local
+  data-mysql:
+    driver: local
+
+networks:
+  database-network:
+    driver: bridge

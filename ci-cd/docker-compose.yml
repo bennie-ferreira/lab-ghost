@@ -1,0 +1,20 @@
+services:
+  nexus-2-14:
+    image: sonatype/nexus:2.14.11-01
+    container_name: nexus-2-14
+    restart: always
+    ports:
+      - "80:8091"
+    volumes:
+      - data-nexus-2-14:/sonatype-work
+    networks:
+      - network-ci-cd
+
+
+volumes:
+  data-nexus-2-14:
+    driver: local
+
+networks:
+  network-ci-cd:
+    driver: bridge

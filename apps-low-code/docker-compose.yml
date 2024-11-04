@@ -1,0 +1,20 @@
+services:
+  ojs:
+    image: pkpofficial/ojs:3_4_0-7
+    container_name: ojs-cms
+    ports:
+      - "8081:80"
+      - "8481:443"
+    restart: always
+    volumes:
+      - data-ojs:/var/www/html/
+    networks:
+      - apps-low-code-network
+
+volumes:
+  data-ojs:
+    driver: local
+
+networks:
+  apps-low-code-network:
+    driver: bridge
