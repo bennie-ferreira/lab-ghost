@@ -18,3 +18,4 @@ volumes:
 networks:
   network-ci-cd:
     driver: bridge
+
