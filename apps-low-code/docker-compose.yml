@@ -11,8 +11,28 @@ services:
     networks:
       - apps-low-code-network
 
+  # https://github.com/bitnami/containers/tree/main/bitnami/wordpress#how-to-use-this-image
+  wordpress:
+    image: bitnami/wordpress:latest
+    container_name: wordpress-cms
+    ports:
+      - "8080:8080"
+      - "8443:8443"
+    restart: always
+    volumes:
+      - data-wordpress:/bitnami/wordpress
+    networks:
+      - apps-low-code-network
+    environment:
+      WORDPRESS_DATABASE_HOST: "192.168.0.4" # example your ip local
+      WORDPRESS_DATABASE_USER: "root"
+      WORDPRESS_DATABASE_PASSWORD: "12345678"
+      WORDPRESS_DATABASE_NAME: "test_db"
+
 volumes:
   data-ojs:
+    driver: local
+  data-wordpress:
     driver: local
 
 networks:

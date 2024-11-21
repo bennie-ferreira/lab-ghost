@@ -23,6 +23,7 @@ Lembre-se para chegar a perfeição exige pratica, então faça de conta que é 
 - PHP: Laravel | Slim framework
 - Java: Spring e Quarkus
 - Node js: Fast api | Nest js
+- C# | Entity framework
 
 ### Frontend: Projetos e Frameworks
 - Angular

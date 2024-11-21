@@ -4,15 +4,28 @@ services:
     container_name: nexus-2-14
     restart: always
     ports:
-      - "80:8091"
+      - "8091:8091"
     volumes:
       - data-nexus-2-14:/sonatype-work
+    networks:
+      - network-ci-cd
+
+  nexus-3:
+    image: sonatype/nexus3:latest
+    container_name: nexus-3
+    restart: always
+    ports:
+      - "8092:8091"
+    volumes:
+      - data-nexus-3:/sonatype-work
     networks:
       - network-ci-cd
 
 
 volumes:
   data-nexus-2-14:
+    driver: local
+  data-nexus-3:
     driver: local
 
 networks:
