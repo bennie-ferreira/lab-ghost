@@ -28,5 +28,5 @@ Meu objetivo é sempre manter atualizado com varias dicas de configuração, tru
 - [wordpress](apps-low-code/docker-compose.yml)
 
 ### Aplicativos Genericos
-- [Apache Tika](app-generics/opensearch/docker-compose.yml)
-- [Opensearch](app-generics/apache-tika/docker-compose.yml)
+- [Opensearch](app-generics/opensearch/docker-compose.yml)
+- [Apache Tika](app-generics/apache-tika/docker-compose.yml)
