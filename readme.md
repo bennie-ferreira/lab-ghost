@@ -1,39 +1,31 @@
 ## 🧑‍🔬 Seja bem vindo ao meu laboratorio fantasma! 👻
 Este repositorios cuida apenas de configurações de varias ferramentas que jugo importante para brincar ou validar PoCs no dia a dia.
-Meu objetivo também é sempre manter atualizado com varias dicas de configuração, truques, scripts e varias coisas legais para produtividade!
-Sinta-se abraçado e com esse repositorio e se divirtar bastante, mais se divirtar muito mesmo! 😃
-Lembre-se para chegar a perfeição exige pratica, então faça de conta que é sua academia virtual 💪
+Meu objetivo é sempre manter atualizado com varias dicas de configuração, truques, scripts e varias coisas legais para produtividade!
 
 ### 🎲 banco de dados 
-- SQL SERVER
-- MYSQL | phpmyadmin
-- PostgreSQL
-- MongoDB
-- Redis
-- KeyDB
+- (SQL SERVER)[databases/docker-compose.yml]
+- (MYSQL | phpmyadmin)[databases/docker-compose.yml]
+- [PostgreSQL](databases/docker-compose.yml)
+- MongoDB - N/D
+- Redis - N/D
+- KeyDB - N/D
 
 ### 🦾 CI/CD
-- Nexus Sonatype
-- Jenkis
-- ArgoCD
-- Drone IO
-
-### Backend: Projetos e Frameworks
-- Python: Fastapi | Djando | Flask
-- PHP: Laravel | Slim framework
-- Java: Spring e Quarkus
-- Node js: Fast api | Nest js
-- C# | Entity framework
-
-### Frontend: Projetos e Frameworks
-- Angular
-- Vue Js
-- React js
+- [Nexus Sonatype](ci-cd/nexus-sonatype/docker-compose.yml)
+- Jenkis - N/D
+- ArgoCD - N/D
+- Drone IO - N/D
 
 ### Observabilidade e Monitoramento
-- OpenTelemery
-- Loki
-- Prometheus
-- Graphana
+- OpenTelemery - N/D
+- Loki - N/D
+- Prometheus - N/D
+- Graphana - N/D
 
-### Truques e Soluções 
+## Apps Low code e CMS
+- [ojs](apps-low-code/docker-compose.yml)
+- [wordpress](apps-low-code/docker-compose.yml)
+
+### Aplicativos Genericos
+- [Apache Tika](app-generics/opensearch/docker-compose.yml)
+- [Opensearch](app-generics/apache-tika/docker-compose.yml)

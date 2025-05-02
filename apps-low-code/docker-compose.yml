@@ -24,7 +24,7 @@ services:
     networks:
       - apps-low-code-network
     environment:
-      WORDPRESS_DATABASE_HOST: "192.168.0.4" # example your ip local
+      WORDPRESS_DATABASE_HOST: "127.0.0.1" # example your ip local
       WORDPRESS_DATABASE_USER: "root"
       WORDPRESS_DATABASE_PASSWORD: "12345678"
       WORDPRESS_DATABASE_NAME: "test_db"

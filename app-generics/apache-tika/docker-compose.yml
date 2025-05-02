@@ -1,0 +1,21 @@
+services:
+  tika-server:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: tika-server
+      ports:
+        - "9998:9998"
+      restart: always
+      networks:
+        - tika-network
+      healthcheck:
+        test: ["CMD", "curl", "-f", "http://tika-server:9998"]
+        interval: 30s
+        timeout: 10s
+        retries: 5
+
+networks:
+  tika-network:
+    name: tika-network
+    driver: bridge
