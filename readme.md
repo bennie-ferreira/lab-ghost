@@ -3,8 +3,9 @@ Este repositorios cuida apenas de configurações de varias ferramentas que jugo
 Meu objetivo é sempre manter atualizado com varias dicas de configuração, truques, scripts e varias coisas legais para produtividade!
 
 ### 🎲 banco de dados 
-- (SQL SERVER)[databases/docker-compose.yml]
-- (MYSQL | phpmyadmin)[databases/docker-compose.yml]
+- [MSSQL](databases/docker-compose.yml)
+- [MYSQL](databases/docker-compose.yml)
+- [phpmyadmin](databases/docker-compose.yml)
 - [PostgreSQL](databases/docker-compose.yml)
 - MongoDB - N/D
 - Redis - N/D
