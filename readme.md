@@ -30,3 +30,6 @@ Meu objetivo é sempre manter atualizado com varias dicas de configuração, tru
 ### Aplicativos Genericos
 - [Opensearch](app-generics/opensearch/docker-compose.yml)
 - [Apache Tika](app-generics/apache-tika/docker-compose.yml)
+
+### Aplicativos Workflow
+- [Temporal](apps-workflow/temporal/docker-compose.yml)
